@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>DRIP — Tienda</title>
+  
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav>
+    <div class="nav-logo">DRIP<span>.</span></div>
+    <button id="btn-abrir-carrito">
+      🛒 Carrito
+      <span id="contador-carrito">0</span>
+    </button>
+  </nav>
+
+  <header class="hero">
+    <h1>Estilo <span>DRIP</span></h1>
+    <p>Encuentra las mejores prendas urbanas con el flow que buscas.</p>
+  </header>
+
+  <main class="tienda">
+    
+    <div class="filtros">
+      <button class="activo" data-categoria="todos">Todos</button>
+      <button data-categoria="ropa">Ropa</button>
+      <button data-categoria="calzado">Calzado</button>
+      <button data-categoria="accesorios">Accesorios</button>
+    </div>
+
+    
+    <div class="productos" id="contenedor-productos">
+      
+    </div>
+  </main>
+
+  <div id="fondo-carrito"></div>
+  <aside id="carrito">
+    <div class="carrito-cabecera">
+      <h2>Tu Carrito</h2>
+      <button id="btn-cerrar-carrito">&times;</button>
+    </div>
+
+    <div id="lista-carrito">
+    
+    </div>
+
+    <div class="carrito-pie">
+      <div class="carrito-total">
+        <span>Total:</span>
+        <span id="total-precio">$0.00</span>
+      </div>
+      <button class="btn-comprar" id="btn-finalizar-compra">Finalizar Compra</button>
+    </div>
+  </aside>
+
+  <div id="toast"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
